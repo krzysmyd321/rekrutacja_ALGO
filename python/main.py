@@ -83,6 +83,9 @@ def create_task(body, params):
     albo to nie jest string. Jak zmieniasz next_id, daj na początku funkcji: global next_id
     """
     # TODO (Część 2)
+    if title == True:
+        health(body, params)
+    
     return 501, {"error": "Not implemented"}
 
 ROUTES = [
